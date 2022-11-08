@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <h1>Crie e compartilhe seu evento.</h1>
+            <p>O primeiro passo, é preencher esse formulário de inscrição</p>
+        </header>
+
+        <form id="my-form">
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Informações do evento</legend>
+                    <div class="input-wrapper">
+                        <label for="event-title">Título do evento <span>(mínimo 8 caracteres)</span></label>
+                        <input type="text" id="event-title" required>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="event-link">Link do evento <span>(comece com https://)</span></label>
+                        <input type="url" id="event-link">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="event-whatsapp">Whatsapp para contato <span>(somente números)</span></label>
+                        <input type="number" id="event-whatsapp">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="event-link">Informações extras</label>
+                        <textarea id="event-info"></textarea>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="event-category">Categoria</label>
+                        <select id="event-category">
+                            <option value="live">Ao vivo</option>
+                            <option value="podcast">Podcast</option>
+                            <option value="mentorship">Mentoria</option>
+
+
+                        </select>
+                    </div>
+
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Privacidade</legend>
+                    <div class="input-wrapper">
+                        <label for="event-email">E-mail do administrador <span>(digite um e-mail valido)</span></label>
+                        <input type="email" id="event-email">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="event-senha">Senha de acesso para os participantes<span>(mínimo 8
+                                caracteres)</span></label>
+                        <input type="password" id="event-senha">
+                    </div>
+
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="event-private">
+                        <label for="event-private">Evento privado</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                    <div class="fieldset-wrapper">
+                        <legend>Dia e hora</legend>
+
+                        <div class="col-3">
+                            <div class="input-wrapper">
+                                <label for="event-date">Data</label>
+                                <input type="date" id="event-date">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="event-time">Das</label>
+                                <input type="time" id="event-time">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="event-time">Até</label>
+                                <input type="time" id="event-time">
+                            </div>
+
+                        </div>
+                    </div>
+            </fieldset>
+
+        </form>
+            <footer>
+                <input class="button" type="submit" value="Salvar evento" form="my-form">
+            </footer>
+
+</body>
+
+<nav class="navbar navbar-light bg-light justify-content-between">
+  <a class="navbar-brand">Navbar</a>
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</nav> 
+    
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW84WkRdhabzyhyZ74gRwn8s-tFxPlPFyAnQ&usqp=CAU" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="..." alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="..." alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div class="card" style="width: 18rem;"> <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRitmyOvA89I1XXN14paYpcAPMhITkzuQkwiA&usqp=CAU" "alt="Card image cap"> <div class="card-body"> <h5 class="card-title">Feito por:</h5> <p class="card-text">Alessandre Masquete <br> RA: 202212007644 </p> <a href="#" class="btn btn-primary">Go somewhere</a> </div> </div>
+
+</body>
+
+</html>
